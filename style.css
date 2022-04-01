@@ -1,0 +1,80 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  background-color: tan;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: lightblue;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav li {
+  list-style: none;
+  padding: 16px 0;
+}
+
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-bg,
+#menu-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+
+.randomDog {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  padding-top: 150px;
+}
